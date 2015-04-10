@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="oscillator.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+        <style>
+            html {
+                font-size: 100%;
+            }
+            body {
+                background: #464a5e;
+                font-family: VT323;
+                color: #d4d5da;
+            }
+            textarea {
+                font-family: VT323;
+                font-size: 20px;
+                background: #76a47d;
+                color: #20291d;
+                border: 4px solid #d4d5da;
+            }
+            button {
+                background: #d4d5da;
+                border: 0;
+                padding: 10px;
+                font-family: VT323;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        &lt;l&gt;[#]&lt;n&gt;&lt;o&gt;<br/>
+        l: length (1 = 1/1, 2 = 1/2, 4 = 1/4, 8 = 1/8 and 16 = 1/16)<br/>
+        #: accidental (optional)<br/>
+        n: note (c, d, e, f, g, a, b)<br/>
+        o: octave (1 to 4)<br/>
+        <br/>
+        <textarea style="width: 200px; height: 200px">8#g2 8e2 8#g2 8#c3 4a2 4- 8#f2 8#d2 8#f2 8b2 4#g2 8#f2 8e2 4- 8e2 8#c2 4#f2 4#c2 4- 8#f2 8e2 4#g2 4#f2</textarea><br/>
+        <button id="play">Play</button>
+    </body>
+</html>
